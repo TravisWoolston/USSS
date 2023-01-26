@@ -1,6 +1,7 @@
 {
+  "main":"server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon"
   },
   "dependencies": {
     "koa": "^2.13.1",
