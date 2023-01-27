@@ -37,7 +37,7 @@ const Contact = ({ member, colorToggle }) => {
         <div className = {"cardHeaders"}>Phone: <d className = {"cardText"}>{`${cc.phone}`}</d> </div>
         <div className = {"cardHeaders"}>Address: <d className = {"cardText"}>{`${cc.address}`}</d> </div>
         <div className = {"cardHeaders"}>Website: <d className = {"cardText"}>{`${cc.url}`}</d> </div>
-        <img src = {cc.image} className = {"cardHeaders"}></img>
+        <img src = {cc.image} width={"200px"}className = {"cardHeaders"}></img>
         </>
       ) : (
         <>
