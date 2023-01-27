@@ -6,7 +6,6 @@ const App = () => {
   const [members, setMembers] = useState([]);
   const [addresses, setAddresses] = useState([]);
   const [search, setSearch] = useState("");
-  const [updated, setUpdated] = useState(search);
   const getMembers = async () => {
     await axios.get("http://localhost:3000/members").then((data) => {
       setMembers(data.data.splice(0, 50));
@@ -57,7 +56,6 @@ const App = () => {
   }, [search]);
   useEffect(() => {
   }, [members]);
-  useEffect(() => {}, [updated]);
   useEffect(() => {
     getMembers();
     getAddresses();
