@@ -46,11 +46,13 @@ module.exports = {
         use: 'babel-loader', 
       },
     ],
+    
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'index.html')
-    })
+      template: path.join(__dirname, 'index.html'),
+      process: 'process/browser',
+    }),
   ],
   externals: { 'sqlite3':'commonjs sqlite3', },
 };

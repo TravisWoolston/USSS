@@ -14,7 +14,7 @@ process.on('unhandledRejection', function(err) {
 
 
 
-const app = require('./App');
+const app = require('./serverApp');
 
 module.exports = app.listen(PORT, HOST, function(err) {
 	if (err) {
