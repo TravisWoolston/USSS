@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
-import Contact from "./components/Contact";
+import Contact from "./Components/Contact";
 const App = () => {
   const [members, setMembers] = useState([]);
   const [addresses, setAddresses] = useState([]);
